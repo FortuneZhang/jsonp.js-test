@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jsonp</title>
+    <script type="text/javascript" src='./public/js/jquery.min.js' />
+    <script type="text/javascript" src='./public/js/uri.min.js' />
+    <script type="text/javascript" src='./public/js/jsonp.js'></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            requesting...
+        </div>
+        <div id="jsonp_result">
+        </div>
+    </div>
+    <script type="text/javascript">
+    $.getJSON('https://jsonp.afeld.me/?callback=?&url=http://cdn.zhangfortune.com/test_script/jsonp_test.php', function(data) {
+        $('#jsonp_result').text(JSON.stringify(data))
+    });
+    </script>
+</body>
+
+</html>
