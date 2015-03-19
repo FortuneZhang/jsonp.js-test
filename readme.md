@@ -9,3 +9,4 @@ jsonp.afeld.me receive your request and then it request www.other.com , and retu
 
 you receive your jsonp request result . good luck!
 
+see more example ,trun right https://jsonp.afeld.me/
